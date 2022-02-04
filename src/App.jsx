@@ -1,5 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { Provider } from "react-redux";
+import { Users } from "./components/users";
 import { store } from "./store";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <ChakraProvider>
       <Provider store={store}>
         <div>
-          Vite app
+          <Users />
         </div>
       </Provider>
     </ChakraProvider>
